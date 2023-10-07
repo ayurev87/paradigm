@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: calc(50% - 574px);
+    padding-right: calc(50% - 574px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    padding-top: 50px;
+    color: rgb(4, 63, 4);
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.timer li {
+    list-style-type: none;
+    font-size: 100px;
+    position: relative;
+    color: rgb(4, 63, 4);
+}
+
+.timer li:not(:last-child) ::after {
+    content: ":";
+    position: absolute;
+    top: -10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button {
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(4, 63, 4);
+    color: rgb(4, 63, 4);
+}
+
+button:focus {
+    background-color: rgb(4, 63, 4);
+    color: #fff;
+}
